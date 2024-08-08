@@ -1,8 +1,6 @@
-package files;
-
+import files.Payload;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
-
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
