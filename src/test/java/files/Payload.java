@@ -72,4 +72,28 @@ public class Payload {
                 "}\n" +
                 "\n";
     }
+
+    public static String addBook()
+    {
+        String payload="{\n" +
+                " \n" +
+                "Name : “bookname”   ( String)\n" +
+                "Isbn :  “A2fdsf”   (String)\n" +
+                "Aisle : 32 (Integer)\n" +
+                " Author: : “authorName”   ( String)\n" +
+                "}\n";
+        return payload;
+    }
+
+    public static String addBook(String bookname,String Isbn,int Aisle,String author)
+    {
+        String payload="{\n" +
+                " \n" +
+                "Name : “"+bookname+"”   ( String)\n" +
+                "Isbn :  “"+Isbn+"”   (String)\n" +
+                "Aisle : "+Aisle+"\n" +
+                " Author: : “"+author+"”   ( String)\n" +
+                "}\n";
+        return payload;
+    }
 }
