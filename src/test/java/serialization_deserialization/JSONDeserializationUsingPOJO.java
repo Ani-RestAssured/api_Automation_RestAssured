@@ -11,7 +11,7 @@ import java.util.List;
 
 import static io.restassured.RestAssured.given;
 
-public class JSONUsingPOJO {
+public class JSONDeserializationUsingPOJO {
 
     public static void main(String[] args) {
         // TODO Auto-generated method stub
@@ -35,7 +35,7 @@ public class JSONUsingPOJO {
                 .when().log().all()
                 .get("https://rahulshettyacademy.com/oauthapi/getCourseDetails").as(GetCourse.class);
 
-  //      System.out.println(gc);
+        System.out.println(gc);
 
         System.out.println(gc.getLinkedIn()+" 32 ");
         System.out.println(gc.getInstructor()+" 33 ");
