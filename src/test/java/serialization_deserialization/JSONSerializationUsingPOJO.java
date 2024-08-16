@@ -34,7 +34,7 @@ public class JSONSerializationUsingPOJO {
         p.setLocation(l);
 
 
-        Response res = given().queryParam("key","qaclick123").
+        Response res = given().log().all().queryParam("key","qaclick123").
                 body(p).
                 when().post("/maps/api/place/add/json").
                 then().assertThat().statusCode(200).extract().response();
