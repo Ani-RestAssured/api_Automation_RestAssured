@@ -1,0 +1,58 @@
+Library API :
+BaseURI : http://216.10.245.166
+ 
+1. Resource : Library/Addbook.php       Method : POST
+ 
+Input Payload : Json:
+{
+&quot;name&quot;:&quot;Learn Appium Automation with Java&quot;,
+&quot;isbn&quot;:&quot;bcd&quot;,
+&quot;aisle&quot;:&quot;227&quot;,
+&quot;author&quot;:&quot;John foe&quot;
+}
+ 
+Output Json 
+{
+&quot;Msg&quot;: &quot;successfully added&quot;,
+&quot;ID&quot;: &quot;bcd227&quot;
+} 
+ 
+ 
+1. Resource : /Library/GetBook.php?AuthorName=somename Method : GET 
+ 
+Output Json :
+Output the array of Json object books with all below  details 
+ 
+
+{
+ 
+Name : “bookname”   ( String)
+Isbn :  “A2fdsf”   (String)
+Aisle : 32 (Integer)
+ 
+}
+ 
+ 
+1. Resource : Library/GetBook.php?ID=3389      - Method : GET 
+ 
+Output Json :
+{
+&quot;book_name&quot;: &quot;Selenium automation using Java&quot;,
+&quot;isbn&quot;: &quot;a23hd738&quot;,
+&quot;aisle&quot;: &quot;1223&quot;
+} 
+ 
+1. Resource :/Library/DeleteBook.php      Method : POST
+ 
+Input Payload : Json:
+{
+
+&quot;ID&quot; : &quot;a23h345122332&quot;
+
+} 
+
+Output Response :
+{
+msg : book is successfully deleted”
+ 
+}
